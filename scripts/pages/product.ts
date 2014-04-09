@@ -31,6 +31,7 @@ $('./body') {
   }
 
   ## turn sidebar lists into togglers
+  # function is in functions/extra.ts
   # related products
   new_toggler(".//div[@id='SideProductRelated']")
   # recently viewed

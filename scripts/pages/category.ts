@@ -35,6 +35,7 @@ $('./body') {
   }
 
   ## turn sidebar lists into togglers
+  # function is in functions/extra.ts
   # top sellers category
   new_toggler(".//div[@id='SideCategoryTopSellers']")
   # new products category

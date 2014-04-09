@@ -11,6 +11,8 @@ html, body {
   width: auto;
 }
 
+
+// overriding existing styles
 .Left, .Right {
   background: none;
   min-height: 0;
@@ -19,8 +21,12 @@ html, body {
     width: auto;
   }
 }
-
-.Left .TopSellers .ProductActionAdd, .Right .TopSellers .ProductActionAdd, .Left .NewProducts .ProductActionAdd, .Right .NewProducts .ProductActionAdd, .Left #SideProductRecentlyViewed .ProductActionAdd, .Right #SideProductRecentlyViewed .ProductActionAdd {
+.Left .TopSellers .ProductActionAdd, 
+.Right .TopSellers .ProductActionAdd, 
+.Left .NewProducts .ProductActionAdd, 
+.Right .NewProducts .ProductActionAdd, 
+.Left #SideProductRecentlyViewed .ProductActionAdd, 
+.Right #SideProductRecentlyViewed .ProductActionAdd {
   background: inherit;
   display: block;
   text-align: center;
