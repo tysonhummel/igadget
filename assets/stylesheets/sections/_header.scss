@@ -1,0 +1,136 @@
+#Header {
+  height: 99px;
+  border-top: 1px solid black;
+  background: $red1;
+  padding: 0;
+  z-index: 100;
+  position: relative;
+  #Logo {
+    width: 100%;
+    #LogoContainer {
+      float: left;
+      h1{
+        height: auto;
+      }
+    }
+    #TopMenu {
+      float: left;
+      position: relative;
+      right: -14px;
+      padding: 0;
+      height: 39px;
+      li span {
+        display: block;
+        text-indent: -2000px;
+      }
+      li span.sprites-cart{
+        margin-left: 6px;
+      }
+      li a {
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 39px;
+        background: none;
+      }
+    }
+    // @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+    @include background($grad1);
+    h1 {
+      margin: 0;
+      padding: 10px;
+      a {
+        font-size: 22px;
+        text-shadow: 0 -1px rgba(0,0,0,0.9);
+        color: white;
+      }
+    }
+  }
+  .mw_header_bottom {
+    width: 100%;
+    display: block;
+    // @include background(linear-gradient(top, #852201, #6a1b00));
+    @include background($grad2);
+    .mw_search {
+      display: inline-block;
+      width: 71%;
+      position: relative;
+      #SearchForm {
+        padding: 10px;
+      }
+      input[type='text']{
+        border: 1px solid black;
+        background-color: #f1f0f0;
+        font-size: 13px;
+        padding: 4px;
+        height: 23px;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+      }
+      .mw_search_btn {
+        height: 33px;
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        input {
+          border: none;
+          width: 40px;
+          height: 33px;
+          padding: 0;
+          color: transparent;
+          background: none;
+        }
+      }
+      #SearchForm{
+        float: none;
+      }
+    }
+    .mw_menu_toggler {
+      margin-top: -43px;
+      #SideCategoryList {
+        clear: both;
+      }
+      .mw_menu_btn {
+        float: right;
+        display: block;
+        position: relative;
+        right: 10px;
+        &[data-ur-state="enabled"] span {
+          @extend .sprites-menu-on;
+        }
+      }
+      #Menu {
+        height: auto;
+        position: relative;
+        top: 10px;
+        background: black;
+        overflow: auto;
+        padding: 10px 0;
+        h2 {
+          color: white;
+          text-align: center;
+          border-top: #aaa solid 1px;
+          padding: 15px 0 10px;
+          margin: 0 20px
+        }
+        ul {
+          overflow: auto;
+        }
+        li {
+          width: 100%;
+          float: none;
+          a {
+            background: none;
+            display: block;
+            width: 100%;
+            padding: 0;
+            line-height: 35px;
+            height: auto;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

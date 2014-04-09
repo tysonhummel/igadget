@@ -1,0 +1,19 @@
+footer.mw-footer {
+  font-size: .8em;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  p:first-of-type {
+    margin-bottom: 0;
+  }
+  a{
+    color: white;
+  }
+  .poweredby {
+    font-style: italic;
+  }
+  .pb-moovweb {
+    margin: 4px auto 10px;
+    @extend .sprites-moovweb;
+  }
+}

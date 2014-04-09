@@ -1,0 +1,46 @@
+@mixin btn1 {
+  @include background($grad1);
+  @include box-shadow($box_shadow1);
+  border: $border1;
+  height: auto;
+  width: 100%;
+  padding: $spacing;
+  color: $text_color;
+  text-decoration: none;
+  text-shadow: $text_shadow;
+  text-align: center;
+  font-family: $font_family;
+  font-size: $h3_size;
+  font-weight: bold;
+  border-radius: $border_radius1;
+  a {
+    display: block;
+    width: 100%;
+    color: $text_color;
+  }
+  strong a{
+    color: $text_color;
+  }
+}
+
+@mixin box1 {
+  background: #f6f6f6;
+  border: $border2;
+  border-radius: $border_radius1;
+}
+
+@mixin list1{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin listElements1 {
+  padding: 10px;
+}
+
+@mixin listHeader1 {
+  border: $border2;
+  @include background($grad2);
+  padding: $padding1;
+}

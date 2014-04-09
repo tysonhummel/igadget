@@ -1,0 +1,65 @@
+// Every page should have a class on the body
+// Scope that in each file at the start
+.mw-product {
+  #ProductDetails {
+    h2 {
+      text-align: left;
+    }
+    .ProductThumb {
+      float: none;
+      width: auto!important;
+    }
+    .ProductMain {
+      width: auto;
+      float: none;
+      margin: 10px 0 0;
+      padding: 10px;
+      @include box1;
+      .ProductDetailsGrid {
+        .DetailRow {
+          padding: 0;
+        }
+        .Label {
+          width: 60px;
+          margin: 0;
+          padding: 0 15px 0 0;
+        }
+        .Value {
+          text-align: left;
+          display: block;
+        }
+      }
+    }
+  }
+  #ProductDescription {
+    h3 {
+      text-align: left;
+    }
+    .ProductDescriptionContainer {
+      text-align: left;
+      span {
+        display: block;
+        margin: 15px 0 5px;
+      }
+    }
+  }
+  .productAttributeList  .productAttributeRow {
+    padding-left: 70px;
+  }
+  .AddCartButton {
+    span {
+      float: none;
+    }
+    div {
+      text-align: center;
+    }
+    input {
+      margin: 10px auto 0;
+    }
+  }
+  #ProductReviews {
+    text-align: left;
+  }
+
+
+}

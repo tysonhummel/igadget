@@ -1,0 +1,195 @@
+html, body {
+  overflow-x: hidden; // prevent horizontal scrolling
+}
+
+#Outer{
+  margin: 0;
+  overflow: auto;
+}
+
+#Container{
+  width: auto;
+}
+
+.Left, .Right {
+  background: none;
+  min-height: 0;
+  h2 {
+    margin: 0;
+    width: auto;
+  }
+}
+
+.Left .TopSellers .ProductActionAdd, .Right .TopSellers .ProductActionAdd, .Left .NewProducts .ProductActionAdd, .Right .NewProducts .ProductActionAdd, .Left #SideProductRecentlyViewed .ProductActionAdd, .Right #SideProductRecentlyViewed .ProductActionAdd {
+  background: inherit;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  @include btn1;
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn1 {
+  @include btn1;
+  margin-bottom: 10px
+}
+
+#Wrapper{
+  background: white;
+  position: relative;
+  z-index: 80;
+  top: -10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  #LayoutColumn1,
+  #LayoutColumn3 {
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+  }
+  #LayoutColumn2 {
+    clear: both;
+    float: none;
+    width: auto;
+    text-align: center;
+    overflow: auto;
+    h2, .TitleHeading {
+      font-size: 1.3em;
+    }
+    .ProductList li, 
+    .fastCartContent .ProductList li,
+    .FeaturedProducts .ProductList li {
+      background: none;
+      border: none;
+      margin: 0 5px 10px 5px;
+      width: auto;
+    }
+    .ProductList li:nth-of-type(2n) {
+      // margin-left: 10px;
+    }
+  }
+  .productAttributeList .productAttributeValue {
+    display: block;
+    clear: both;
+    margin-left: -65px;
+    .scrollContainer {
+      max-height: none;
+    }
+    table {
+      text-align: left;
+    }
+  }
+}
+
+// images
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+//// toggler lists
+// button
+.mw-list-toggler-button {
+  @include listHeader1;
+  position: relative;
+  h2{
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    width: auto;
+  }
+  .plus-minus{
+    position: absolute;
+    top: 6px;
+    right: 7px;
+  }
+}
+.mw-list-toggler-button[data-ur-state="disabled"] {
+  border-radius: $border_radius1;
+  .plus-minus {
+    @extend .sprites-plus;
+  }
+}
+.mw-list-toggler-button[data-ur-state="enabled"] {
+  border-radius: $border_radius2;
+  .plus-minus {
+    @extend .sprites-minus;
+  }
+}
+// content
+.Left .BlockContent ,
+.Right .BlockContent {
+  margin: 0;
+}
+.Left .ProductList li, .Right .ProductList li {
+  width: auto;
+  margin: 0;
+  padding: $padding1;
+  background: #F3EEDA;
+  .ProductPriceRating {
+    padding: 4px 0;
+    text-align: center;
+    em, span {
+      display: inline-block;
+    }
+    span {
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+.mw-list-toggler-content {
+  border: $border2;
+  border-top: none;
+  border-radius: $border_radius3;
+  li{
+    background: #F3EEDA;
+    a{
+      background: none;
+      font-size: 1.4em;
+    }
+  }
+  li:not(:first-of-type) {
+    border-top: $border2;
+  }
+  li:last-of-type {
+    border-radius: $border_radius3;
+  }
+}
+
+.ProductList .ProductImage{
+  display: flex;
+  align-items: center;
+}
+
+.SortBox{
+  float: none;
+  color: white;
+  @include listHeader1;
+  border-radius: $border_radius1;
+  text-align: left;
+}
+
+#BrandContent {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
